@@ -23,7 +23,7 @@
   ],
   "notification_subscribers": [],
   "branches_to_filter": [
-    "maste-sync-work",
+    "master-sync-work",
     "live-sync-work"
   ],
   "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/azure-docs",
