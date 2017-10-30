@@ -1,6 +1,31 @@
 {
     "redirections": [
-        {
+         {
+	    "source_path": "articles/cognitive-services/Video/Home.md",
+	    "redirect_url": "/azure/cognitive-services/video-indexer/video-indexer-overview",
+	    "redirect_document_id": false 
+	},
+	{
+	    "source_path": "articles/cognitive-services/Video/Glossary.md",
+	    "redirect_url": "/azure/cognitive-services/video-indexer/video-indexer-overview",
+	    "redirect_document_id": false 
+	},
+	{
+	    "source_path": "articles/cognitive-services/Video/GetStarted.md",
+	    "redirect_url": "/azure/cognitive-services/video-indexer/video-indexer-overview",
+	    "redirect_document_id": false 
+	},
+	{
+	    "source_path": "articles/cognitive-services/Video/How-To/HowtoAnalyzeVideo_Video.md",
+	    "redirect_url": "/azure/cognitive-services/video-indexer/video-indexer-overview",
+	    "redirect_document_id": false 
+	},
+	{
+	    "source_path": "articles/cognitive-services/Video/How-To/HowtoCallVideoAPIs.md",
+	    "redirect_url": "/azure/cognitive-services/video-indexer/video-indexer-overview",
+	    "redirect_document_id": false 
+	},
+	{
             "source_path": "articles/active-directory/cloudappdiscovery-overview.md",
             "redirect_url": "/azure/active-directory/cloudappdiscovery-get-started",
             "redirect_document_id": false
@@ -7088,6 +7113,16 @@
         {
             "source_path": "articles/service-fabric/service-fabric-use-data-loss-api.md",
             "redirect_url": "/azure/service-fabric/service-fabric-testability-overview",
+            "redirect_document_id": false
+        },
+		{
+            "source_path": "articles/site-recovery/site-recovery-architecture-hyper-v-to-azure.md",
+            "redirect_url": "concepts-hyper-v-to-azure-architecture",
+            "redirect_document_id": false
+        },
+		{
+            "source_path": "articles/site-recovery/site-recovery-architecture-to-secondary-site.md",
+            "redirect_url": "concepts-hyper-v-to-secondary-architecture",
             "redirect_document_id": false
         },
 		{
