@@ -3,6 +3,8 @@
 	"need_generate_pdf_url_template": true,
 	"need_generate_pdf": true,
 	"need_generate_intellisense": false,
+	"enable_push_aggregation": true,
+	"enable_pull_request_aggregation": true,
 	"branch_target_mapping": {
 		"live": ["Publish", "PDF"],
 		"master": ["Publish", "PDF"],
@@ -54,6 +56,17 @@
 	  "branch_mapping": {}
 	},
 	{
+		"path_to_root": "policy-templates",
+		"url": "https://github.com/Azure/azure-policy",
+		"branch": "master",
+		"branch_mapping":
+		{
+			"release-build-mysql": "release-build",
+			"release-build-postgresql": "release-build",
+			"release-build-stellar": "release-build"
+		}
+  },
+  {
 	  "path_to_root": "cli_scripts",
 	  "url": "https://github.com/Azure/azure-docs-cli-python-samples",
 	  "branch": "master",
