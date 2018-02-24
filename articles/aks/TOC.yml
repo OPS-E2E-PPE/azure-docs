@@ -55,6 +55,8 @@
     items:
     - name: Static IP address
       href: static-ip.md
+    - name: Ingress and TLS
+      href: ingress.md
   - name: Security and authentication
     items:
     - name: Create service principal
@@ -67,8 +69,10 @@
       href: kubernetes-helm.md
     - name: Develop applications with Draft
       href: kubernetes-draft.md
-    - name: Integrate with Azure using OSBA
+    - name: Open Service Broker for Azure
       href: integrate-azure.md
+    - name: Jenkins continuous deployment
+      href: jenkins-continuous-deployment.md
   - name: Kubernetes basics
     items:
     - name: Use Kubernetes dashboard
