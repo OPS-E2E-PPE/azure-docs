@@ -15,6 +15,8 @@
     href: sql-database-get-started-cli.md
   - name: Create DB - Azure PowerShell
     href: sql-database-get-started-powershell.md
+  - name: Create Managed Instance
+    href: sql-database-managed-instance-get-started.md
   - name: Connect and query
     href: sql-database-connect-query.md
     items:
@@ -478,7 +480,7 @@
       href: sql-database-develop-cplusplus-simple.md
     - name: Excel
       href: sql-database-connect-excel.md
-  - name: Multi-tenant SaaS reference architecture
+  - name: Multi-tenant SaaS sample application
     items:
     - name: Wingtip Tickets sample
       href: saas-tenancy-welcome-wingtip-tickets-app.md
