@@ -143,9 +143,10 @@
       "branch_mapping": {}
     },
     {
-        "path_to_root": "samples-luis",
-        "url": "https://github.com/Microsoft/Luis-Samples",
-        "branch":"master"
+      "path_to_root": "samples-luis",
+      "url": "https://github.com/Azure-Samples/cognitive-services-language-understanding",
+      "branch": "master",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "api-management-policy-samples",
