@@ -39,7 +39,14 @@
 	"git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/azure-docs",
 	"git_repository_branch_open_to_public_contributors": "master",
 	"enable_incremental_build": true,
-	"dependent_repositories": [{
+	"dependent_repositories": [
+  {
+    "path_to_root": "quickstart-templates",
+    "url": "https://github.com/Azure/azure-quickstart-templates",
+    "branch": "master",
+    "branch_mapping": {}
+  },
+  {
 	  "path_to_root": "_themes",
 	  "url": "https://github.com/Microsoft/templates.docs.msft",
 	  "branch": "master",
@@ -317,8 +324,20 @@
       "branch_mapping": {}
     },
     {
+      "path_to_root": "samples-fbPageModeration",
+      "url": "https://github.com/MicrosoftContentModerator/samples-fbPageModeration",
+      "branch": "master",
+      "branch_mapping": {}
+    },
+    {
       "path_to_root": "AIVisualProvision",
       "url": "https://github.com/Microsoft/AIVisualProvision",
+      "branch": "master",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "VideoReviewConsoleApp",
+      "url": "https://github.com/MicrosoftContentModerator/VideoReviewConsoleApp",
       "branch": "master",
       "branch_mapping": {}
     }

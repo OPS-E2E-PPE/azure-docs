@@ -11,7 +11,7 @@ author: jovanpop-msft
 ms.author: jovanpop
 ms.reviewer: carlrab, bonova 
 manager: craigg
-ms.date: 03/06/2019
+ms.date: 03/13/2019
 ---
 
 # Azure SQL Database Managed Instance T-SQL differences from SQL Server
@@ -212,7 +212,7 @@ For more information, see [ALTER DATABASE SET PARTNER and SET WITNESS](https://d
 
 - Multiple log files aren't supported.
 - In-memory objects aren't supported in the General Purpose service tier.  
-- There's a limit of 280 files per instance implying max 280 files per database. Both data and log files are counted toward this limit.  
+- There's a limit of 280 files per General Purpose instance implying max 280 files per database. Both data and log files in General Purpose tier are counted toward this limit. [Business Critical tier supports 32,767 files per database](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-managed-instance-resource-limits#service-tier-characteristics).
 - Database can't contain filegroups containing filestream data.  Restore will fail if .bak contains `FILESTREAM` data.  
 - Every file is placed in Azure Blob storage. IO and throughput per file depend on the size of each individual file.  
 
@@ -472,13 +472,17 @@ The following variables, functions, and views return different results:
 
 ### TEMPDB size
 
-`tempdb` is split into 12 files each with max size 14 GB per file. This maximum size per file can't be changed and new files can be added to `tempdb`. This limitation will be removed soon. Some queries might return an error if  they need more than 168 GB in `tempdb`.
+Max file size of `tempdb` cannot be greather than 24GB/core on General Purpose tier. Max `tempdb` size on Business Critical tier is limited with the instance storage size. `tempdb` is always split into 12 data files. This maximum size per file can't be changed and new files can be added to `tempdb`. Some queries might return an error if  they need more than 24GB / core in `tempdb`.
+
+### Cannot restore contained database
+
+Managed Instance cannot restore [contained databases](https://docs.microsoft.com/sql/relational-databases/databases/contained-databases). Point-in-time restore of the existing contained databases don't work on Managed Instance. This issue will be removed soon and in the meantime we recommend to remove containment option from your databases that are placed on Managed Instance, and do not use containment option for the production databases.
 
 ### Exceeding storage space with small database files
 
-Each Managed Instance has up to 35 TB storage reserved for Azure Premium Disk space, and each database file is placed on a separate physical disk. Disk sizes can be 128 GB, 256 GB, 512 GB, 1 TB, or 4 TB. Unused space on disk is not charged, but the total sum of Azure Premium Disk sizes cannot exceed 35 TB. In some cases, a Managed Instance that does not need 8 TB in total might exceed the 35 TB Azure limit on storage size, due to internal fragmentation.
+Each General Purpose Managed Instance has up to 35 TB storage reserved for Azure Premium Disk space, and each database file is placed on a separate physical disk. Disk sizes can be 128 GB, 256 GB, 512 GB, 1 TB, or 4 TB. Unused space on disk is not charged, but the total sum of Azure Premium Disk sizes cannot exceed 35 TB. In some cases, a Managed Instance that does not need 8 TB in total might exceed the 35 TB Azure limit on storage size, due to internal fragmentation.
 
-For example, a Managed Instance could have one file 1.2 TB in size that is placed on a 4 TB disk, and 248 files (each 1 GB in size) that are placed on separate 128 GB disks. In this example:
+For example, a General Purpose Managed Instance could have one file 1.2 TB in size that is placed on a 4 TB disk, and 248 files (each 1 GB in size) that are placed on separate 128 GB disks. In this example:
 
 - The total allocated disk storage size is 1 x 4 TB + 248 x 128 GB = 35 TB.
 - The total reserved space for databases on the instance is 1 x 1.2 TB + 248 x 1 GB = 1.4 TB.
@@ -486,6 +490,8 @@ For example, a Managed Instance could have one file 1.2 TB in size that is place
 This illustrates that under certain circumstance, due to a specific distribution of files, a Managed Instance might reach the 35 TB reserved for attached Azure Premium Disk when you might not expect it to.
 
 In this example, existing databases will continue to work and can grow without any problem as long as new files are not added. However new databases could not be created or restored because there is not enough space for new disk drives, even if the total size of all databases does not reach the instance size limit. The error that is returned in that case is not clear.
+
+You can [identify number of remaining files](https://medium.com/azure-sqldb-managed-instance/how-many-files-you-can-create-in-general-purpose-azure-sql-managed-instance-e1c7c32886c1) using system views. If you are reaching this limit try to [empty and delete some of the smaller files using DBCC SHRINKFILE statement](https://docs.microsoft.com/sql/t-sql/database-console-commands/dbcc-shrinkfile-transact-sql#d-emptying-a-file) or shitch to [Business Critical tier that don't has this limit](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-managed-instance-resource-limits#service-tier-characteristics).
 
 ### Incorrect configuration of SAS key during database restore
 
@@ -505,7 +511,7 @@ Several system views, performance counters, error messages, XEvents, and error l
 
 ### Database mail profile
 
-There can be only one database mail profile and it must be called `AzureManagedInstance_dbmail_profile`.
+The database mail profile used by SQL Agent must be called `AzureManagedInstance_dbmail_profile`.
 
 ### Error logs are not-persisted
 
@@ -519,7 +525,7 @@ A Managed Instance places verbose information in error logs and many of them are
 
 ### Transaction Scope on two databases within the same instance isn't supported
 
-`TransactionScope` class in .Net doesn't work if two queries are sent to the two databases within the same instance under the same transaction scope:
+`TransactionScope` class in .NET doesn't work if two queries are sent to the two databases within the same instance under the same transaction scope:
 
 ```C#
 using (var scope = new TransactionScope())

@@ -6,10 +6,9 @@ services: machine-learning
 ms.service: machine-learning
 ms.subservice: core
 ms.topic: reference
-author: hning86
-ms.author: haining
-ms.reviewer: j-martens
-ms.date: 03/11/2019
+ms.author: larryfr
+author: Blackmist
+ms.date: 03/25/2019
 ms.custom: seodec18
 ---
 
@@ -19,12 +18,37 @@ In this article, learn about the Azure Machine Learning service releases.  For a
 + The Azure Machine Learning's  [**main SDK for Python**](https://aka.ms/aml-sdk)
 + The Azure Machine Learning [**Data Prep SDK**](https://aka.ms/data-prep-sdk)
 
+## 2019-03-25
+
+### Azure Machine Learning SDK for Python v1.0.21
+
++ **New features**
+  + The *azureml.core.Run.create_children* method allows low-latency creation of multiple child runs with a single call.
+
+### Azure Machine Learning Data Prep SDK v1.1.0
+
++ **Breaking changes**
+  + The concept of the Data Prep Package has been deprecated and is no longer supported. Instead of persisting multiple Dataflows in one Package, you can persist Dataflows individually.
+    + How-to guide: [Opening and Saving Dataflows notebook](https://aka.ms/aml-data-prep-open-save-dataflows-nb)
+
++ **New features**
+  + Data Prep can now recognize columns that match a particular Semantic Type, and split accordingly. The STypes currently supported include: email address, geographic coordinates (latitude & longitude), IPv4 and IPv6 addresses, US phone number, and US zip code.
+    + How-to guide: [Semantic Types notebook](https://aka.ms/aml-data-prep-semantic-types-nb)
+  + Data Prep now supports the following operations to generate a resultant column from two numeric columns: subtract, multiply, divide, and modulo.
+  + You can call `verify_has_data()` on a Dataflow to check whether the Dataflow would produce records if executed.
+
++ **Bug fixes and improvements**
+  + You can now specify the number of bins to use in a histogram for numeric column profiles.
+  + The `read_pandas_dataframe` transform now requires the DataFrame to have string- or byte- typed column names.
+  + Fixed a bug in the `fill_nulls` transform, where values were not correctly filled in if the column was missing.
+
 ## 2019-03-11
 
 ### Azure Machine Learning SDK for Python v1.0.18
 
  + **Changes**
    + The azureml-tensorboard package replaces azureml-contrib-tensorboard.
+   + With this release you can setup a user account on your managed compute cluster (amlcompute), while creating it. This can be done by simply passing these properties in the provisoning configuration. You can find more details in the [SDK reference documentation](https://docs.microsoft.com/python/api/azureml-core/azureml.core.compute.amlcompute.amlcompute?view=azure-ml-py#provisioning-configuration-vm-size-----vm-priority--dedicated---min-nodes-0--max-nodes-none--idle-seconds-before-scaledown-none--admin-username-none--admin-user-password-none--admin-user-ssh-key-none--vnet-resourcegroup-name-none--vnet-name-none--subnet-name-none--tags-none--description-none-).
 
 ### Azure Machine Learning Data Prep SDK v1.0.17
 
