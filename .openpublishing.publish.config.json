@@ -32,7 +32,10 @@
 		"master-sync-work",
 		"live-sync-work",
 		"master-previewDemo-working",
-		"preview-master-working"
+		"preview-master-working",
+		"repo_sync_novalidation_prtest_branch",
+		"repo_sync_novalidation_live_branch",
+		"repo_sync_novalidation_master_branch"
 	],
 	"skip_source_output_uploading": false,
 	"need_preview_pull_request": true,
