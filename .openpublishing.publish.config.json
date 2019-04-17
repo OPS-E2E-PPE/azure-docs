@@ -2,9 +2,9 @@
   "build_entry_point": "docs",
   "docsets_to_publish": [
     {
-      "docset_name": "azure-documents",
+      "docset_name": "e2eppe-azure-documents",
       "build_source_folder": ".",
-      "build_output_subfolder": "azure",
+      "build_output_subfolder": "e2eppe-azure-documents",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
@@ -21,13 +21,17 @@
       "version": 0
     }
   ],
-  "notification_subscribers": [
-    "azure-docs-publish@microsoft.com"
+  "notification_subscribers": [],
+  "sync_notification_subscribers": [],
+  "branches_to_filter": [
+	"master-sync-work"
+	"live-sync-work"
+	"master-previewDemo-working"
+	"preview-master-working"
+	"repo_sync_novalidation_prtest_branch"
+	"repo_sync_novalidation_live_branch"
+	"repo_sync_novalidation_master_branch"
   ],
-  "sync_notification_subscribers": [
-    "tysonn@microsoft.com"
-  ],
-  "branches_to_filter": [],
   "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/azure-docs",
   "git_repository_branch_open_to_public_contributors": "master",
   "skip_source_output_uploading": false,
@@ -362,6 +366,9 @@
     ]
   },
   "need_generate_pdf_url_template": true,
+  "need_generate_intellisense": false,
+  "enable_push_aggregation": true
+  "enable_pull_request_aggregation": true
   "targets": {
     "Pdf": {
       "template_folder": "_themes.pdf"	
