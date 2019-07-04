@@ -30,7 +30,8 @@
 	"preview-master-working",
 	"repo_sync_novalidation_prtest_branch",
 	"repo_sync_novalidation_live_branch",
-	"repo_sync_novalidation_master_branch"
+	"repo_sync_novalidation_master_branch",
+        "docfx-v3-e2e-pr-test"
   ],
   "git_repository_url_open_to_public_contributors": "https://github.com/Microsoft/azure-docs",
   "git_repository_branch_open_to_public_contributors": "master",
