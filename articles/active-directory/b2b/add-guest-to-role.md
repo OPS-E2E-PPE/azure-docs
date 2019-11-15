@@ -38,3 +38,4 @@ Azure Active Directory (Azure AD) B2B collaboration users are added as guest use
 - [What is Azure AD B2B collaboration?](what-is-b2b.md)
 - [B2B collaboration user properties](user-properties.md)
 - [Juchen Test for V3 cache](user-properties.md)
+- [Juchen Test for V3 cache2](user-properties.md)
