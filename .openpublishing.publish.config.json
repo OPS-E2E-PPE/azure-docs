@@ -440,7 +440,8 @@
     "master": [
       "Publish",
       "PDF"
-    ]
+    ],
+    "v3-integration-test": []
   },
   "need_generate_pdf_url_template": true,
   "need_generate_intellisense": false,
