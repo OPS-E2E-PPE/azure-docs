@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/digital-twins/how-to-manage-routes.md",
+      "redirect_url": "/azure/digital-twins/how-to-manage-routes-apis-cli",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "articles/digital-twins/how-to-set-up-instance.md",
       "redirect_url": "/azure/digital-twins/how-to-set-up-instance-scripted",
       "redirect_document_id": false
@@ -28,6 +33,16 @@
     {
       "source_path": "articles/virtual-machines/linux/ephemeral-os-disks.md",
       "redirect_url": "/azure/virtual-machines/ephemeral-os-disks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/virtual-machines/windows/backup-recovery.md",
+      "redirect_url": "/azure/virtual-machines/backup-recovery",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/virtual-machines/linux/backup-recovery.md",
+      "redirect_url": "/azure/virtual-machines/backup-recovery",
       "redirect_document_id": false
     },
     {
@@ -8969,6 +8984,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "articles/azure-functions/recover-module-not-found.md",
+      "redirect_url": "/azure/azure-functions/recover-python-functions",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "articles/azure-functions/scripts/functions-cli-configure-ssl-certificate.md",
       "redirect_url": "/azure/app-service/scripts/cli-configure-ssl-certificate?toc=%2fcli%2fazure%2ftoc.json",
       "redirect_document_id": false
@@ -16526,7 +16546,7 @@
     {
       "source_path": "articles/machine-learning/service/how-to-enable-logging.md",
       "redirect_url": "/azure/machine-learning/how-to-enable-logging",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "articles/machine-learning/service/how-to-enable-virtual-network.md",
@@ -16626,7 +16646,7 @@
     {
       "source_path": "articles/machine-learning/service/how-to-track-experiments.md",
       "redirect_url": "/azure/machine-learning/how-to-track-experiments",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "articles/machine-learning/service/how-to-train-chainer.md",
@@ -17596,6 +17616,11 @@
     {
       "source_path": "articles/machine-learning/team-data-science-process/cortana-analytics-technical-guide-predictive-maintenance.md",
       "redirect_url": "/azure/machine-learning/team-data-science-process/predictive-maintenance-technical-guide",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "articles/machine-learning/how-to-enable-logging.md",
+      "redirect_url": "/azure/machine-learning/how-to-track-experiments",
       "redirect_document_id": true
     },
     {
@@ -39286,6 +39311,11 @@
     {
       "source_path": "articles/cognitive-services/LUIS/luis-get-started-php-get-intent.md",
       "redirect_url": "/azure/cognitive-services/LUIS/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/cognitive-services/Speech-Service/speech-devices-sdk-kws-guidelines.md",
+      "redirect_url": "/azure/cognitive-services/speech-service/custom-keyword-overview",
       "redirect_document_id": false
     },
     {
