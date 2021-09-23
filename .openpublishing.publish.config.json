@@ -28,8 +28,9 @@
   ],
   "notification_subscribers": [],
   "sync_notification_subscribers": [],
-  "branches_to_filter": ["live-sync-work-test"],
-  "sync_notification_subscribers": [],
+  "branches_to_filter": [
+    "live-sync-work-test"
+  ],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/azure-docs",
   "git_repository_branch_open_to_public_contributors": "master",
   "skip_source_output_uploading": false,
@@ -51,13 +52,13 @@
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
-      "branch": "master",
+      "branch": "main",
       "branch_mapping": {}
     },
     {
       "path_to_root": "_themes.pdf",
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
-      "branch": "master",
+      "branch": "main",
       "branch_mapping": {}
     },
     {
@@ -775,10 +776,10 @@
       "branch_mapping": {}
     },
     {
-    "path_to_root": "digital-twins-docs-samples-getting-started",
-    "url": "https://github.com/Azure-Samples/azure-digital-twins-getting-started",
-    "branch": "main",
-    "branch_mapping": {}
+      "path_to_root": "digital-twins-docs-samples-getting-started",
+      "url": "https://github.com/Azure-Samples/azure-digital-twins-getting-started",
+      "branch": "main",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "dotnet-samples",
@@ -798,7 +799,7 @@
       "Publish",
       "PDF"
     ],
-    "master": [
+    "main": [
       "Publish",
       "PDF"
     ],
