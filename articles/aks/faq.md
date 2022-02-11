@@ -11,6 +11,9 @@ ms.custom: references_regions
 
 This article addresses frequent questions about Azure Kubernetes Service (AKS).
 
+### This is test only content
+I'm a [404 link](404-file.md).
+
 ## Which Azure regions currently provide AKS?
 
 For a complete list of available regions, see [AKS regions and availability][aks-regions].
