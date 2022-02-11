@@ -2,9 +2,9 @@
   "build_entry_point": "docs",
   "docsets_to_publish": [
     {
-      "docset_name": "azure-documents",
+      "docset_name": "e2eppe-azure-documents",
       "build_source_folder": ".",
-      "build_output_subfolder": "azure",
+      "build_output_subfolder": "e2eppe-azure-documents",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
@@ -26,14 +26,12 @@
       "version": 0
     }
   ],
-  "notification_subscribers": [
-    "azure-docs-publish@microsoft.com"
+  "notification_subscribers": [],
+  "sync_notification_subscribers": [],
+  "branches_to_filter": [
+    "master-sync-work"
   ],
-  "sync_notification_subscribers": [
-    "angrobe_extended_dir@microsoft.com"
-  ],
-  "branches_to_filter": [],
-  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/azure-docs",
+  "git_repository_url_open_to_public_contributors": "https://github.com/OPS-E2E-PPE/azure-docs",
   "git_repository_branch_open_to_public_contributors": "master",
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
