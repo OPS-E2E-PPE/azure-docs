@@ -2,9 +2,9 @@
   "build_entry_point": "docs",
   "docsets_to_publish": [
     {
-      "docset_name": "azure-documents",
+      "docset_name": "e2eppe-azure-documents",
       "build_source_folder": ".",
-      "build_output_subfolder": "azure",
+      "build_output_subfolder": "e2eppe-azure-documents",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
@@ -23,11 +23,13 @@
       "version": 0
     }
   ],
-  "notification_subscribers": ["azure-docs-publish@microsoft.com"],
-  "sync_notification_subscribers": ["angrobe_extended_dir@microsoft.com"],
-  "branches_to_filter": [],
-  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/azure-docs",
-  "git_repository_branch_open_to_public_contributors": "main",
+  "notification_subscribers": [],
+  "sync_notification_subscribers": [],
+  "branches_to_filter": [
+    "live-sync-work-test"
+  ],
+  "git_repository_url_open_to_public_contributors": "https://github.com/OPS-E2E-PPE/azure-docs",
+  "git_repository_branch_open_to_public_contributors": "master",
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
   "contribution_branch_mappings": {},
@@ -869,10 +871,20 @@
 
   ],
   "branch_target_mapping": {
-    "live": ["Publish", "PDF"],
-    "main": ["Publish", "PDF"]
+    "live": [
+      "Publish",
+      "PDF"
+    ],
+    "main": [
+      "Publish",
+      "PDF"
+    ],
+    "v3-integration-test": []
   },
   "need_generate_pdf_url_template": true,
+  "need_generate_intellisense": false,
+  "enable_push_aggregation": true,
+  "enable_pull_request_aggregation": true,
   "targets": {
     "Pdf": {
       "template_folder": "_themes.pdf"
