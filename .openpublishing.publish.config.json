@@ -173,12 +173,6 @@
       "branch_mapping": {}
     },
     {
-      "path_to_root": "samples-mediaservices-encoderstandard",
-      "url": "https://github.com/Azure-Samples/media-services-dotnet-on-demand-encoding-with-media-encoder-standard",
-      "branch": "master",
-      "branch_mapping": {}
-    },
-    {
       "path_to_root": "azure-app-service-multi-container",
       "url": "https://github.com/Azure-Samples/multicontainerwordpress",
       "branch": "master",
