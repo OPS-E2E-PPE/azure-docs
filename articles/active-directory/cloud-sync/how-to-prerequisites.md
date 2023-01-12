@@ -7,7 +7,7 @@ manager: amycolannino
 ms.service: active-directory
 ms.workload: identity
 ms.topic: how-to
-ms.date: 03/04/2022
+ms.date: 01/11/2023
 ms.subservice: hybrid
 ms.author: billmath
 ms.collection: M365-identity-device-management
@@ -195,7 +195,7 @@ The following are known limitations:
 
 ### Scoping filter
 When using OU scoping filter
-- You can only sync up to 59 separate OUs for a given configuration. 
+- You can only sync up to 59 separate OUs or Security Groups for a given configuration. 
 - Nested OUs are supported (that is, you **can** sync an OU that has 130 nested OUs, but you **cannot** sync 60 separate OUs in the same configuration). 
 
 ### Password Hash Sync
