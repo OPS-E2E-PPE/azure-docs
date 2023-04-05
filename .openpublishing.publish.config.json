@@ -71,6 +71,12 @@
       "branch_mapping": {}
     },
     {
+      "path_to_root": "ms-identity-docs-code-javascript",
+      "url": "https://github.com/Azure-Samples/ms-identity-docs-code-javascript",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
       "branch": "main",
@@ -374,6 +380,12 @@
       "path_to_root": "media-services-video-indexer",
       "url": "https://github.com/Azure-Samples/media-services-video-indexer",
       "branch": "master",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "ms-identity-docs-code-dotnet",
+      "url": "https://github.com/Azure-Samples/ms-identity-docs-code-dotnet",
+      "branch": "main",
       "branch_mapping": {}
     },
     {
@@ -698,6 +710,12 @@
       "path_to_root": "VideoReviewConsoleApp",
       "url": "https://github.com/MicrosoftContentModerator/VideoReviewConsoleApp",
       "branch": "master",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "ms-identity-javascript-react-docs",
+      "url": "https://github.com/Azure-Samples/ms-identity-javascript-react-docs",
+      "branch": "main",
       "branch_mapping": {}
     },
     {
