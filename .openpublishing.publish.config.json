@@ -77,6 +77,18 @@
       "branch_mapping": {}
     },
     {
+      "path_to_root": "ms-identity-docs-code-dotnet",
+      "url": "https://github.com/Azure-Samples/ms-identity-docs-code-dotnet",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "ms-identity-javascript-react-docs",
+      "url": "https://github.com/Azure-Samples/ms-identity-javascript-react-docs",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
       "path_to_root": "ms-identity-docs-code-javascript",
       "url": "https://github.com/Azure-Samples/ms-identity-docs-code-javascript",
       "branch": "main",
@@ -86,6 +98,48 @@
       "path_to_root": "ms-identity-ciam-dotnet-tutorial",
       "url": "https://github.com/Azure-Samples/ms-identity-ciam-dotnet-tutorial",
       "branch": "main",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "ms-identity-javascript-v2",
+      "url": "https://github.com/Azure-Samples/ms-identity-javascript-v2",
+      "branch": "master",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "ms-identity-python-webapp-quickstart",
+      "url": "https://github.com/Azure-Samples/ms-identity-python-webapp",
+      "branch": "0.7.0",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "ms-identity-python-webapp-tutorial",
+      "url": "https://github.com/Azure-Samples/ms-identity-python-webapp",
+      "branch": "0.6.0",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "ms-identity-node",
+      "url": "https://github.com/Azure-Samples/ms-identity-node",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "ms-identity-javascript-nodejs-desktop",
+      "url": "https://github.com/Azure-Samples/ms-identity-javascript-nodejs-desktop",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "ms-identity-b2c-javascript-spa",
+      "url": "https://github.com/Azure-Samples/ms-identity-b2c-javascript-spa",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "ms-identity-dotnetcore-b2c-account-management",
+      "url": "https://github.com/Azure-Samples/ms-identity-dotnetcore-b2c-account-management",
+      "branch": "master",
       "branch_mapping": {}
     },
     {
@@ -404,12 +458,6 @@
       "path_to_root": "media-services-video-indexer",
       "url": "https://github.com/Azure-Samples/media-services-video-indexer",
       "branch": "master",
-      "branch_mapping": {}
-    },
-    {
-      "path_to_root": "ms-identity-docs-code-dotnet",
-      "url": "https://github.com/Azure-Samples/ms-identity-docs-code-dotnet",
-      "branch": "main",
       "branch_mapping": {}
     },
     {
@@ -767,12 +815,6 @@
       "branch_mapping": {}
     },
     {
-      "path_to_root": "ms-identity-javascript-react-docs",
-      "url": "https://github.com/Azure-Samples/ms-identity-javascript-react-docs",
-      "branch": "main",
-      "branch_mapping": {}
-    },
-    {
       "path_to_root": "cognitive-services-quickstart-code",
       "url": "https://github.com/Azure-Samples/cognitive-services-quickstart-code",
       "branch": "master",
@@ -887,24 +929,6 @@
       "branch_mapping": {}
     },
     {
-      "path_to_root": "ms-identity-b2c-javascript-spa",
-      "url": "https://github.com/Azure-Samples/ms-identity-b2c-javascript-spa",
-      "branch": "main",
-      "branch_mapping": {}
-    },
-    {
-      "path_to_root": "ms-identity-dotnetcore-b2c-account-management",
-      "url": "https://github.com/Azure-Samples/ms-identity-dotnetcore-b2c-account-management",
-      "branch": "master",
-      "branch_mapping": {}
-    },
-    {
-      "path_to_root": "ms-identity-javascript-v2",
-      "url": "https://github.com/Azure-Samples/ms-identity-javascript-v2",
-      "branch": "master",
-      "branch_mapping": {}
-    },
-    {
       "path_to_root": "msdocs-python-flask-webapp-quickstart",
       "url": "https://github.com/Azure-Samples/msdocs-python-flask-webapp-quickstart",
       "branch": "main",
@@ -956,30 +980,6 @@
       "path_to_root": "functions-sql-todo-sample",
       "url": "https://github.com/Azure-Samples/azure-sql-binding-func-dotnet-todo",
       "branch": "docs-snippets",
-      "branch_mapping": {}
-    },
-    {
-      "path_to_root": "ms-identity-python-webapp-quickstart",
-      "url": "https://github.com/Azure-Samples/ms-identity-python-webapp",
-      "branch": "0.7.0",
-      "branch_mapping": {}
-    },
-    {
-      "path_to_root": "ms-identity-python-webapp-tutorial",
-      "url": "https://github.com/Azure-Samples/ms-identity-python-webapp",
-      "branch": "0.6.0",
-      "branch_mapping": {}
-    },
-    {
-      "path_to_root": "ms-identity-node",
-      "url": "https://github.com/Azure-Samples/ms-identity-node",
-      "branch": "main",
-      "branch_mapping": {}
-    },
-    {
-      "path_to_root": "ms-identity-javascript-nodejs-desktop",
-      "url": "https://github.com/Azure-Samples/ms-identity-javascript-nodejs-desktop",
-      "branch": "main",
       "branch_mapping": {}
     },
     {
