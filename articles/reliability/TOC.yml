@@ -64,8 +64,6 @@ items:
         href: /azure/service-fabric/service-fabric-cross-availability-zones?toc=/azure/reliability/toc.json&bc=/azure/reliability/breadcrumb/toc.json
       - name: Disaster recovery
         href: /azure/service-fabric/service-fabric-disaster-recovery?toc=/azure/reliability/toc.json&bc=/azure/reliability/breadcrumb/toc.json#availability-of-the-service-fabric-cluster
-    - name: Azure Spring Apps
-      href: reliability-spring-apps.md
     - name: Azure Virtual Machines
       href: reliability-virtual-machines.md
     - name: Azure Virtual Machine Image Builder
@@ -160,6 +158,8 @@ items:
       href: reliability-energy-data-services.md
     - name: Azure Event Grid
       href: ./reliability-event-grid.md
+    - name: Azure Event Hubs
+      href: ./reliability-event-hubs.md
     - name: Azure Functions 
       href: reliability-functions.md
     - name: Azure Health Data Services
