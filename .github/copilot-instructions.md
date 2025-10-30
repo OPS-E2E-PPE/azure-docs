@@ -15,7 +15,7 @@ All Markdown content created or substantially modified with AI assistance must i
 If missing, **add it**. However, do not add or update the ai-usage tag if the changes proposed are confined solely to:
 - links (link text and/or URLs)
 - single words or short phrases, such as entries in table cells
-- Less than 5% of the article's word count
+- less than 5% of the article's word count
 
 ### Writing Style
 
