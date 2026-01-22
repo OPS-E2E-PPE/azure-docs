@@ -12,13 +12,13 @@ ms.author: mbender
 
 # Application gateway components
 
- An application gateway serves as the single point of contact for clients. It distributes incoming application traffic across multiple backend pools, which include Azure VMs, virtual machine scale sets, Azure App Service, and on-premises/external servers. To distribute traffic, an application gateway uses several components described in this article.
+ An application gateway serves as the single point of contact for clients, distributing incoming application traffic across multiple backend pools, which include Azure VMs, virtual machine scale sets, Azure App Service, and on-premises/external servers. To distribute traffic, an application gateway uses several components described in this article.
 
 ![The components used in an application gateway](./media/application-gateway-components/application-gateway-components.png)
 
-## Frontend IP addresses
+## Frontend IP Addresses
 
-A frontend IP address is the IP address associated with an application gateway. You can configure an application gateway to have a public IP address, a private IP address, or both. An application gateway supports one public or one private IP address. Your virtual network and public IP address must be in the same location as your application gateway. After it's created, a frontend IP address is associated with a listener.
+A frontend IP address is the IP address associated with an application gateway. You can configure this to have a public IP address, a private IP address, or both. An application gateway supports one public or one private IP address. Your virtual network and public IP address must be in the same location as your application gateway. After it is created, a frontend IP address is associated with a listener.
 
 ### Static versus dynamic public IP address
 
@@ -68,15 +68,15 @@ For more information, see [Custom error pages for your application gateway](cust
 
 There are two types of listeners:
 
-- **Basic**. This type of listener listens to a single domain site, where it has a single DNS mapping to the IP address of the application gateway. This listener configuration is required when you host a single site behind an application gateway.
+- **Basic**. This type of listener listens to a single domain site, where it has a single DNS mapping to the IP address of the application gateway. This is required when you host a single site behind an application gateway.
 
-- **Multi-site**. This listener configuration is required when you want to configure routing based on host name or domain name for more than one web application on the same application gateway. It allows you to configure a more efficient topology for your deployments by adding up to 100+ websites to one application gateway. Each website can be directed to its own backend pool. For example, three domains, contoso.com, fabrikam.com, and adatum.com, point to the IP address of the application gateway. You'd create three [multi-site listeners](multiple-site-overview.md) and configure each listener for the respective port and protocol setting. 
+- **Multi-site**. This is required when you want to configure routing based on host name or domain name for more than one web application on the same application gateway. It enables configuring a more efficient topology for your deployments by adding up to 100+ websites to one application gateway. Each website can be derected to it's own backend pool. For example, three domains, contoso.com, fabrikam.com, and adatum.com, point to the IP address of the application gateway. You'd create three [multi-site listeners](multiple-site-overview.md) and configure each listener for the respective port and protocol setting. 
 
     You can also define wildcard host names in a multi-site listener and up to 5 host names per listener. To learn more, see [wildcard host names in listener](multiple-site-overview.md#wildcard-host-names-in-listener).
 
     For more information on how to configure a multi-site listener, see [Multiple-site hosting in Application Gateway using Azure portal](create-multiple-sites-portal.md).
 
-After you create a listener, you associate it with a request routing rule. This rule determines how the request received on the listener should be routed to the backend. The request routing rule also contains the backend pool to be routed to and the HTTP setting where the backend port, protocol, etc. are mentioned.
+After you create a listener, you associate it with a request routing rule. This determines how the request received on the listener should be routed to the backend. The request routing rule also conatins the backend pool to be routed to and the HTTP setting where the backend port, protocol, etc. are mentioned.
 
 ## Request routing rules
 
@@ -118,7 +118,7 @@ This component is also used to:
 
 - Determine whether a user session is to be kept on the same server by using the [cookie-based session affinity](features.md#session-affinity).
 
-- Gracefully remove backend pool members by using [connection draining](features.md#connection-draining).
+- Gracefully remove backend pool members using [connection draining](features.md#connection-draining).
 
 - Associate a custom probe to monitor the backend health, set the request timeout interval, override host name and path in the request, and provide one-click ease to specify settings for the App Service backend.
 
@@ -131,9 +131,9 @@ A backend pool routes request to backend servers, which serve the request. Backe
 - Public IP addresses
 - Internal IP addresses
 - FQDN (fully qualified domain names) or short names (single-label domain names), provided your DNS server can resolve them
-- Multitenant backends (such as App Service)
+- Multitenant backends (e.g. App Service)
 
-Application Gateway backend pool members aren't tied to an availability set. An application gateway can communicate with instances outside of the virtual network that it's in. As a result, the members of the backend pools can be across clusters, across datacenters, or outside Azure, as long as there's IP connectivity.
+Application Gateway backend pool members are not tied to an availability set. An application gateway can communicate with instances outside of the virtual network that it's in. As a result, the members of the backend pools can be across clusters, across datacenters, or outside Azure, as long as there's IP connectivity.
 
 If you use internal IPs as backend pool members, you must use [virtual network peering](../virtual-network/virtual-network-peering-overview.md) or a [VPN gateway](../vpn-gateway/vpn-gateway-about-vpngateways.md). Virtual network peering is supported and beneficial for load-balancing traffic in other virtual networks.
 
