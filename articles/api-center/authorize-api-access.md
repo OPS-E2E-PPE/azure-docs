@@ -18,7 +18,7 @@ You can configure settings to authorize access to APIs in your [API center](over
 * Associate specific authentication methods with specific API versions in your inventory
 * Manage authentication to API versions by designated users or groups through access policies
 * Enable authorized users to test APIs directly in the [API Center portal](set-up-api-center-portal.md)
-
+  
 > [!NOTE]
 > This feature is currently in preview.
 
