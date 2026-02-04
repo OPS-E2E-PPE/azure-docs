@@ -1,12 +1,12 @@
 ---
 title: Set Up the API Center Portal
 description: How to set up the API Center portal, a managed website that enables discovery of the API inventory in your Azure API center.
-author: dlepow
+
 ms.service: azure-api-center
 ms.topic: how-to
 ms.date: 08/05/2025
 ms.update-cycle: 180-days
-ms.author: danlep 
+ 
 ms.custom: 
 ms.collection: 
 # Customer intent: As an API program manager, I want to enable an Azure-managed portal for developers and other API stakeholders in my organization to discover the APIs in my organization's API center.
@@ -22,7 +22,7 @@ This article shows you how to set up the *API Center portal* (preview), an Azure
 > The API Center portal is currently in preview.
 
 > [!TIP]
-> Both Azure API Management and Azure API Center provide API portal experiences for developers. [Compare the portals](#api-management-and-api-center-portals)
+> Both Azure API Management and Azure API Center provide API portal experiences for developers. [Compare the portals](#api-management-and-api-center-portals).
 
 
 [!INCLUDE [api-center-portal-prerequisites](includes/api-center-portal-prerequisites.md)]
@@ -55,7 +55,7 @@ After publishing, you can access the API Center portal in your browser.
 * Or, enter the following URL in your browser, replacing `<service-name>` and `<location>` with the name of your API center and the location where it's deployed:<br/>
     `https://<service-name>.portal.<location>.azure-apicenter.ms`
 
-By default, the portal home page is reachable publicly but requires sign-in to access APIs. See [Enable sign-in to portal by Microsoft Entra users and groups](#enable-sign-in-to-portal-by-microsoft-entra-users-and-groups) for details on how to configure user access to the portal.
+By default, the portal home page is publicly reachable but requires sign-in to access APIs. For more information about how to configure user access to the portal, see [Enable sign-in to portal by Microsoft Entra users and groups](#enable-sign-in-to-portal-by-microsoft-entra-users-and-groups).
 
 ## Enable sign-in to portal by Microsoft Entra users and groups 
 
@@ -66,15 +66,15 @@ By default, the portal home page is reachable publicly but requires sign-in to a
 
 The API Center portal supports and streamlines the work of developers who use and create APIs within your organization. Signed-in users can:
 
-* **Search for APIs** by name or using [AI-assisted semantic search](customize-api-center-portal.md#semantic-search)
+* **Search for APIs** by name or use [AI-assisted semantic search](customize-api-center-portal.md#semantic-search).
 
-* **Filter APIs** by type or lifecycle stage
+* **Filter APIs** by type or lifecycle stage.
 
-* **View API details and definitions** including endpoints, methods, parameters, and response formats
+* **View API details and definitions** including endpoints, methods, parameters, and response formats.
 
-* **Download API definitions** to a local computer or open them in Visual Studio Code
+* **Download API definitions** to a local computer or open them in Visual Studio Code.
 
-* **Try out APIs** that support API key authentication or OAuth 2.0 authorization
+* **Try out APIs** that support API key authentication or OAuth 2.0 authorization.
 
 [!INCLUDE [api-center-portal-compare-apim-dev-portal](includes/api-center-portal-compare-apim-dev-portal.md)]
 
