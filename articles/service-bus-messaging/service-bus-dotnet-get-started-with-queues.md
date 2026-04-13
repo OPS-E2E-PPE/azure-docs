@@ -153,7 +153,7 @@ This section shows you how to create a .NET console application to send messages
         "<NAMESPACE-NAME>.servicebus.windows.net",
         new DefaultAzureCredential(),
         clientOptions);
-    sender = client.CreateSender("<QUEUE-NAME>");
+    sender = client.CreateSender("<QUEUE-NAME>")
     
     // create a batch 
     using ServiceBusMessageBatch messageBatch = await sender.CreateMessageBatchAsync();
