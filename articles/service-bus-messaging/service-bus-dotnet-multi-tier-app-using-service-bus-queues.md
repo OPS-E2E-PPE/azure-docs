@@ -340,7 +340,7 @@ Service Bus queue.
                 var message = new ServiceBusMessage(new BinaryData(order));
 
                 // send the message to the queue
-                QueueConnector.sbSender.SendMessageAsync(message);
+                QueueConnector.sbSender.SendMessageAsync(message)
 
                 return RedirectToAction("Submit");
             }
